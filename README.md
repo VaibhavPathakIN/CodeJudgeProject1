@@ -1,3 +1,13 @@
+# API Lead Management System
+Solution for the subjected problem
+
+#Assumptiton
+```
+1. In case of an Update Request, it is assumed that fields that need to be updated will be the part of request object only.
+2. In case of an Mark a Lead, it is assumed that if no lead is present then it would respond with 404(Not Found).
+```
+
+
 # Spring Boot Maven
 
 PROJECT START STEPS:

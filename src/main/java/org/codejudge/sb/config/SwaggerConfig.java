@@ -13,17 +13,15 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
-    @Bean
-    public Docket apiDocket() {
+	@Bean
+	public Docket apiDocket() {
 
-        Docket docket =  new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
-                .paths(PathSelectors.any())
-                .build();
+		Docket docket = new Docket(DocumentationType.SWAGGER_2).select()
+				.apis(RequestHandlerSelectors.withClassAnnotation(RestController.class)).paths(PathSelectors.any())
+				.build();
 
-        return docket;
+		return docket;
 
-    }
+	}
 
 }
